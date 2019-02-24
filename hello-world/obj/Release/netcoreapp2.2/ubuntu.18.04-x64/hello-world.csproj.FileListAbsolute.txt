@@ -1,0 +1,14 @@
+/home/hector/platzi/csharp-fundamentals/hello-world/bin/Release/netcoreapp2.2/ubuntu.18.04-x64/libhostpolicy.so
+/home/hector/platzi/csharp-fundamentals/hello-world/bin/Release/netcoreapp2.2/ubuntu.18.04-x64/libhostfxr.so
+/home/hector/platzi/csharp-fundamentals/hello-world/bin/Release/netcoreapp2.2/ubuntu.18.04-x64/hello-world
+/home/hector/platzi/csharp-fundamentals/hello-world/bin/Release/netcoreapp2.2/ubuntu.18.04-x64/hello-world.deps.json
+/home/hector/platzi/csharp-fundamentals/hello-world/bin/Release/netcoreapp2.2/ubuntu.18.04-x64/hello-world.runtimeconfig.json
+/home/hector/platzi/csharp-fundamentals/hello-world/bin/Release/netcoreapp2.2/ubuntu.18.04-x64/hello-world.runtimeconfig.dev.json
+/home/hector/platzi/csharp-fundamentals/hello-world/bin/Release/netcoreapp2.2/ubuntu.18.04-x64/hello-world.dll
+/home/hector/platzi/csharp-fundamentals/hello-world/bin/Release/netcoreapp2.2/ubuntu.18.04-x64/hello-world.pdb
+/home/hector/platzi/csharp-fundamentals/hello-world/obj/Release/netcoreapp2.2/ubuntu.18.04-x64/hello-world.csprojAssemblyReference.cache
+/home/hector/platzi/csharp-fundamentals/hello-world/obj/Release/netcoreapp2.2/ubuntu.18.04-x64/hello-world.csproj.CoreCompileInputs.cache
+/home/hector/platzi/csharp-fundamentals/hello-world/obj/Release/netcoreapp2.2/ubuntu.18.04-x64/hello-world.AssemblyInfoInputs.cache
+/home/hector/platzi/csharp-fundamentals/hello-world/obj/Release/netcoreapp2.2/ubuntu.18.04-x64/hello-world.AssemblyInfo.cs
+/home/hector/platzi/csharp-fundamentals/hello-world/obj/Release/netcoreapp2.2/ubuntu.18.04-x64/hello-world.dll
+/home/hector/platzi/csharp-fundamentals/hello-world/obj/Release/netcoreapp2.2/ubuntu.18.04-x64/hello-world.pdb
