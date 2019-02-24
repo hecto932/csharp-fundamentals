@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/hector/platzi/csharp-fundamentals/hello-world/hello-world.csproj",
-      "projectName": "hello-world",
-      "projectPath": "/home/hector/platzi/csharp-fundamentals/hello-world/hello-world.csproj",
+      "projectUniqueName": "/home/hector/platzi/csharp-fundamentals/CoreEscuela/CoreEscuela.csproj",
+      "projectName": "CoreEscuela",
+      "projectPath": "/home/hector/platzi/csharp-fundamentals/CoreEscuela/CoreEscuela.csproj",
       "packagesPath": "/home/hector/.nuget/packages/",
-      "outputPath": "/home/hector/platzi/csharp-fundamentals/hello-world/obj/",
+      "outputPath": "/home/hector/platzi/csharp-fundamentals/CoreEscuela/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

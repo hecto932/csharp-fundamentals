@@ -1,0 +1,11 @@
+/home/hector/platzi/csharp-fundamentals/CoreEscuela/bin/Debug/netcoreapp2.2/CoreEscuela.deps.json
+/home/hector/platzi/csharp-fundamentals/CoreEscuela/bin/Debug/netcoreapp2.2/CoreEscuela.runtimeconfig.json
+/home/hector/platzi/csharp-fundamentals/CoreEscuela/bin/Debug/netcoreapp2.2/CoreEscuela.runtimeconfig.dev.json
+/home/hector/platzi/csharp-fundamentals/CoreEscuela/bin/Debug/netcoreapp2.2/CoreEscuela.dll
+/home/hector/platzi/csharp-fundamentals/CoreEscuela/bin/Debug/netcoreapp2.2/CoreEscuela.pdb
+/home/hector/platzi/csharp-fundamentals/CoreEscuela/obj/Debug/netcoreapp2.2/CoreEscuela.csprojAssemblyReference.cache
+/home/hector/platzi/csharp-fundamentals/CoreEscuela/obj/Debug/netcoreapp2.2/CoreEscuela.csproj.CoreCompileInputs.cache
+/home/hector/platzi/csharp-fundamentals/CoreEscuela/obj/Debug/netcoreapp2.2/CoreEscuela.AssemblyInfoInputs.cache
+/home/hector/platzi/csharp-fundamentals/CoreEscuela/obj/Debug/netcoreapp2.2/CoreEscuela.AssemblyInfo.cs
+/home/hector/platzi/csharp-fundamentals/CoreEscuela/obj/Debug/netcoreapp2.2/CoreEscuela.dll
+/home/hector/platzi/csharp-fundamentals/CoreEscuela/obj/Debug/netcoreapp2.2/CoreEscuela.pdb
