@@ -1,0 +1,11 @@
+/home/hector/platzi/csharp-fundamentals/step1/bin/Debug/netcoreapp2.2/step1.deps.json
+/home/hector/platzi/csharp-fundamentals/step1/bin/Debug/netcoreapp2.2/step1.runtimeconfig.json
+/home/hector/platzi/csharp-fundamentals/step1/bin/Debug/netcoreapp2.2/step1.runtimeconfig.dev.json
+/home/hector/platzi/csharp-fundamentals/step1/bin/Debug/netcoreapp2.2/step1.dll
+/home/hector/platzi/csharp-fundamentals/step1/bin/Debug/netcoreapp2.2/step1.pdb
+/home/hector/platzi/csharp-fundamentals/step1/obj/Debug/netcoreapp2.2/step1.csprojAssemblyReference.cache
+/home/hector/platzi/csharp-fundamentals/step1/obj/Debug/netcoreapp2.2/step1.csproj.CoreCompileInputs.cache
+/home/hector/platzi/csharp-fundamentals/step1/obj/Debug/netcoreapp2.2/step1.AssemblyInfoInputs.cache
+/home/hector/platzi/csharp-fundamentals/step1/obj/Debug/netcoreapp2.2/step1.AssemblyInfo.cs
+/home/hector/platzi/csharp-fundamentals/step1/obj/Debug/netcoreapp2.2/step1.dll
+/home/hector/platzi/csharp-fundamentals/step1/obj/Debug/netcoreapp2.2/step1.pdb
