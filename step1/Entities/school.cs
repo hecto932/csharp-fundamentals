@@ -12,7 +12,7 @@ namespace CoreSchool.Entities
     public string country { get; set; }
     public string city { get; set; }
 
-    private int myVar;
+    public TypeSchool type { get; set; }
 
     // public School(string name, int yearFoundation) {
     //   this.name = name;
@@ -21,5 +21,10 @@ namespace CoreSchool.Entities
 
     // Igualacion por Tuplas, clasico en lenguajes funcionales
     public School(string name, int year) => (Name, yearFoundation) = (name, year);
+
+    public override string ToString() 
+    {
+      return $"Name: {Name}, TypeSchool: {type} \nCountry: {country}, City: {city}";
+    }
   }
 }
