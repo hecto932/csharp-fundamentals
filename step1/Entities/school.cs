@@ -14,17 +14,25 @@ namespace CoreSchool.Entities
 
     public TypeSchool type { get; set; }
 
-    // public School(string name, int yearFoundation) {
-    //   this.name = name;
-    //   this.yearFoundation = yearFoundation;
-    // }
-
     // Igualacion por Tuplas, clasico en lenguajes funcionales
     public School(string name, int year) => (Name, yearFoundation) = (name, year);
 
+    public School(
+      string name, 
+      int yearFoundation, 
+      TypeSchool type, 
+      string country="", 
+      string city=""
+    )
+    {
+      (Name, yearFoundation, type) = (name, yearFoundation, type);
+      this.country = country;
+      this.city = city;
+    }
+
     public override string ToString() 
     {
-      return $"Name: {Name}, TypeSchool: {type} \nCountry: {country}, City: {city}";
+      return $"Name: \"{Name}\", TypeSchool: {type} {System.Environment.NewLine}Country: {country}, City: {city}";
     }
   }
 }

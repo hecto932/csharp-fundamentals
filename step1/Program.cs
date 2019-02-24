@@ -7,10 +7,12 @@ namespace step1
     {
         static void Main(string[] args)
         {
-            var school = new School("Platzi Academy", 2012);
-            school.country = "Colombia";
-            school.city = "Bogota";
-            school.type = TypeSchool.Primary;
+            var school = new School(
+                "Platzi Academy", 
+                2012, 
+                TypeSchool.Preschool,
+                city:"Bogota"
+            );
             Console.WriteLine(school);
         }
     }
