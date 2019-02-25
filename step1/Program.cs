@@ -1,5 +1,6 @@
 ﻿using System;
 using CoreSchool.Entities;
+using static System.Console;
 
 namespace step1
 {
@@ -14,33 +15,29 @@ namespace step1
           city: "Bogota"
       );
 
-      var arrayCourses = new Course[3];
-
-      arrayCourses[0] = new Course()
-      {
-        Name = "101"
+      school.courses = new Course[] {
+        new Course() { Name = "101" },
+        new Course() { Name = "201" },
+        new Course() { Name = "301" }
       };
+      // school.courses = null;
+      printSchoolCourses(school);
 
-      arrayCourses[1] = new Course()
-      {
-        Name = "201"
-      };
+    }
 
-      arrayCourses[2] = new Course()
-      {
-        Name = "301"
-      };
+    private static void printSchoolCourses(School school)
+    {
+      WriteLine("f===========================");
+      WriteLine($"School name: {school.Name}");
+      WriteLine("School courses");
+      WriteLine("============================");
 
-      Console.WriteLine(school);
-      System.Console.WriteLine("=================================");
-      WhilePrintCourses(arrayCourses);
-      Console.WriteLine();
-      DoWhilePrintCourses(arrayCourses);
-      Console.WriteLine();
-      ForPrintCourses(arrayCourses);
-      Console.WriteLine();
-      ForEachPrintCourses(arrayCourses);
-
+      if (school != null && school.courses != null) {
+        foreach (var course in school.courses)
+        {
+            WriteLine(course);
+        }
+      }
     }
 
     private static void WhilePrintCourses(Course[] arrayCourses)
@@ -48,7 +45,7 @@ namespace step1
       int i = 0;
       while (i < arrayCourses.Length)
       {
-        Console.WriteLine(arrayCourses[i]);
+        WriteLine(arrayCourses[i]);
         i++;
       }
     }
@@ -59,7 +56,7 @@ namespace step1
 
       do
       {
-        Console.WriteLine(arrayCourses[i]);
+        WriteLine(arrayCourses[i]);
         i++;
       } while (i < arrayCourses.Length);
     }
@@ -68,7 +65,7 @@ namespace step1
     {
       for (int i = 0; i < arrayCourses.Length; i++)
       {
-        Console.WriteLine(arrayCourses[i]);
+        WriteLine(arrayCourses[i]);
       }
     }
 
@@ -76,7 +73,7 @@ namespace step1
     {
       foreach (var course in arrayCourses)
       {
-          Console.WriteLine(course);
+          WriteLine(course);
       }
     }
   }
