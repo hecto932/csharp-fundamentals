@@ -2,10 +2,10 @@ using System.Collections.Generic;
 
 namespace CoreSchool.Entities
 {
-  class School {
+  public class School {
     string name;
     public string Name {
-      get { return "Copia: " + name; }
+      get { return name; }
       set { name = value.ToUpper(); }
     }
 
