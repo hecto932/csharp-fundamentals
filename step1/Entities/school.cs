@@ -1,3 +1,5 @@
+using System.Collections.Generic;
+
 namespace CoreSchool.Entities
 {
   class School {
@@ -14,7 +16,7 @@ namespace CoreSchool.Entities
 
     public TypeSchool type { get; set; }
 
-    public Course[] courses { get; set; }
+    public List<Course> courses { get; set; }
 
     // Igualacion por Tuplas, clasico en lenguajes funcionales
     public School(string name, int year) => (Name, yearFoundation) = (name, year);

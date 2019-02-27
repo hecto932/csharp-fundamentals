@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using CoreSchool.Entities;
 using static System.Console;
 
@@ -14,14 +15,29 @@ namespace step1
           TypeSchool.Preschool,
           city: "Bogota"
       );
-
-      school.courses = new Course[] {
+      school.courses = new List<Course>(){
         new Course() { Name = "101" },
         new Course() { Name = "201" },
         new Course() { Name = "301" }
       };
+      school.courses.Add(new Course{ Name="102", typeWorkDay=TypeWorkDay.Afternoon });
+      school.courses.Add(new Course{ Name="202", typeWorkDay=TypeWorkDay.Afternoon });
+
+      var otherCollection = new List<Course>(){
+        new Course{ Name = "302", typeWorkDay=TypeWorkDay.Afternoon },
+        new Course{ Name = "402", typeWorkDay=TypeWorkDay.Afternoon },
+        new Course{ Name = "502", typeWorkDay=TypeWorkDay.Afternoon }
+      };
+
+      // Adding data on list from other list
+      otherCollection.Clear();
+      school.courses.AddRange(otherCollection);
+      // school.courses.RemoveAll();
+
       // school.courses = null;
       printSchoolCourses(school);
+
+      
 
     }
 
