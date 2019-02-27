@@ -34,11 +34,23 @@ namespace step1
       school.courses.AddRange(otherCollection);
       // school.courses.RemoveAll();
 
-      // school.courses = null;
+      var tempCourse = new Course{ Name="101-vacacional", typeWorkDay=TypeWorkDay.Night };
+      school.courses.Add(tempCourse);
       printSchoolCourses(school);
+      WriteLine(tempCourse.GetHashCode());
+      school.courses.Remove(tempCourse);
+      // school.courses = null;
 
-      
+      // Using predicates
+      Predicate<Course> myAlgorithm = Predicate;
 
+      school.courses.RemoveAll(myAlgorithm);
+
+      printSchoolCourses(school);
+    }
+    private static bool Predicate(Course obj)
+    {
+      return obj.Name == "101";
     }
 
     private static void printSchoolCourses(School school)
