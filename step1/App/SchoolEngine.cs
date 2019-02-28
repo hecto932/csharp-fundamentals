@@ -27,11 +27,33 @@ namespace CoreSchool
 
       uploadCourses();
       uploadSubjects();
+      uploadEvaluations();
     }
 
     private void uploadEvaluations()
     {
-      throw new NotImplementedException();
+      foreach(var course in School.Courses) 
+      {
+        foreach (var subject in course.Subjects)
+        {
+            foreach (var student in course.Students)
+            {
+              var rnd = new Random(System.Environment.TickCount);
+
+              for(int i = 0; i < 5; i++) 
+              {
+                var ev = new Evaluation
+                {
+                  Subject = subject,
+                  Name = $"{subject.Name} ev#{i + 1}",
+                  Points = (float)(5 * rnd.NextDouble()),
+                  Student = student
+                };
+                student.Evaluations.Add(ev);
+              }
+            }
+        }
+      }
     }
 
     private void uploadSubjects()
