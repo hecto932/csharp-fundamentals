@@ -2,41 +2,40 @@ using System.Collections.Generic;
 
 namespace CoreSchool.Entities
 {
-  public class School {
+  public class School
+  {
     string name;
-    public string Name {
+    public string Name
+    {
       get { return name; }
       set { name = value.ToUpper(); }
     }
 
-    public int yearFoundation { get;set; }
+    public int YearFundation { get; set; }
 
-    public string country { get; set; }
-    public string city { get; set; }
+    public string Country { get; set; }
+    public string City { get; set; }
 
-    public TypeSchool type { get; set; }
+    public TypeSchool TypeSchool { get; set; }
 
-    public List<Course> courses { get; set; }
+    public List<Course> Courses { get; set; }
 
     // Igualacion por Tuplas, clasico en lenguajes funcionales
-    public School(string name, int year) => (Name, yearFoundation) = (name, year);
+    public School(string name, int year) => (Name, YearFundation) = (name, year);
 
-    public School(
-      string name, 
-      int yearFoundation, 
-      TypeSchool type, 
-      string country="", 
-      string city=""
-    )
+
+    public School(string name, int year,
+                   TypeSchool typeSchool,
+                   string country = "", string city = "") : base()
     {
-      (Name, yearFoundation, type) = (name, yearFoundation, type);
-      this.country = country;
-      this.city = city;
+      (Name, YearFundation) = (name, year);
+      Country = country;
+      City = City;
     }
 
-    public override string ToString() 
+    public override string ToString()
     {
-      return $"Name: \"{Name}\", TypeSchool: {type} {System.Environment.NewLine}Country: {country}, City: {city}";
+      return $"Name: \"{Name}\", TypeSchool: {TypeSchool} {System.Environment.NewLine}Country: {Country}, City: {City}";
     }
   }
 }

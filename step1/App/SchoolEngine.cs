@@ -27,12 +27,6 @@ namespace CoreSchool
 
       uploadCourses();
       uploadSubjects();
-
-      foreach (var course in School.courses)
-      {
-        course.Students.AddRange(uploadStudents());
-      }
-      // uploadEvaluations();
     }
 
     private void uploadEvaluations()
@@ -42,7 +36,7 @@ namespace CoreSchool
 
     private void uploadSubjects()
     {
-      foreach (var course in School.courses)
+      foreach (var course in School.Courses)
       {
         List<Subject> listSubjects = new List<Subject>(){
           new Subject{Name="Matematicas"},
@@ -50,31 +44,44 @@ namespace CoreSchool
           new Subject{Name="Castellano"},
           new Subject{Name="Ciencias Naturales"}
         };
-        course.Subjects.AddRange(listSubjects);
+        course.Subjects = listSubjects;
       }
     }
 
-    private IEnumerable<Student> uploadStudents()
+    private List<Student> generateStudents(int countPeople)
     {
       string[] name = { "Alba", "Felipa", "Eusebio", "Farid", "Donald", "Alvaro", "Nicolás" };
       string[] lastname = { "Ruiz", "Sarmiento", "Uribe", "Maduro", "Trump", "Toledo", "Herrera" };
       string[] secondName = { "Freddy", "Anabel", "Rick", "Murty", "Silvana", "Diomedes", "Nicomedes", "Teodoro" };
 
-      var listStudents =  from n1 in name
-                          from n2 in secondName
-                          from l1 in lastname
-                          select new Student{ Name=$"{n1} {n2} {l1}"};
+      var listStudents = from n1 in name
+                         from n2 in secondName
+                         from l1 in lastname
+                         select new Student { Name = $"{n1} {n2} {l1}" };
 
-      return listStudents;
+      return listStudents.OrderBy((st) => st.UniqueId).Take(countPeople).ToList();
     }
 
-    public void uploadCourses() => School.courses = new List<Course>(){
+    public void uploadCourses()
+    {
+
+      School.Courses = new List<Course>() {
         new Course() { Name = "101", typeWorkDay=TypeWorkDay.Morning },
         new Course() { Name = "201", typeWorkDay=TypeWorkDay.Morning },
         new Course() { Name = "301", typeWorkDay=TypeWorkDay.Morning },
         new Course() { Name = "401", typeWorkDay=TypeWorkDay.Afternoon },
         new Course() { Name = "501", typeWorkDay=TypeWorkDay.Afternoon },
       };
+
+      Random rand = new Random();
+      foreach (var c in School.Courses)
+      {
+        int randomCount = rand.Next(5, 20);
+        System.Console.WriteLine(randomCount);
+        c.Students = generateStudents(randomCount);
+        System.Console.WriteLine(c.Students);
+      }
+    }
   }
 }
 

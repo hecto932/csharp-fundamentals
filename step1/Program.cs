@@ -22,8 +22,8 @@ namespace CoreSchool
     {
       Printer.DrawTitle(school.Name);
 
-      if (school != null && school.courses != null) {
-        foreach (var course in school.courses)
+      if (school != null && school.Courses != null) {
+        foreach (var course in school.Courses)
         {
             WriteLine(course);
         }
